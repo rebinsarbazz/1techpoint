@@ -43,9 +43,7 @@
 
 @theme inline {
   --font-sans: var(--font-inter), system-ui, sans-serif;
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
-  --font-arabic: var(--font-arabic), system-ui, sans-serif;
-  --font-kurdish: var(--font-kurdish), var(--font-arabic), system-ui, sans-serif;
+  --font-kurdish: var(--font-arabic), 'Noto Sans Arabic', system-ui, sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -95,16 +93,8 @@
   }
 }
 
-/* Language-specific font styles */
-[lang="ar"] {
-  font-family: var(--font-arabic), system-ui, sans-serif;
-}
-
-[lang="ku"] {
-  font-family: var(--font-kurdish), var(--font-arabic), system-ui, sans-serif;
-}
-
 /* RTL Support - Enhanced */
+
 [dir="rtl"] {
   text-align: right;
   direction: rtl;
@@ -114,20 +104,23 @@
   --tw-space-x-reverse: 1;
 }
 
-/* Ensure proper letter spacing for Arabic/Kurdish text */
-[lang="ar"] *,
-[lang="ku"] * {
-  letter-spacing: normal;
-  word-spacing: normal;
+/* RTL specific adjustments */
+[dir="rtl"] .flex-row {
+  flex-direction: row-reverse;
 }
 
-/* Better text rendering for RTL languages */
-[lang="ar"],
-[lang="ku"],
-[dir="rtl"] {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+[dir="rtl"] .space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+[dir="rtl"] .mr-2 {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+[dir="rtl"] .ml-2 {
+  margin-left: 0;
+  margin-right: 0.5rem;
 }
 
 /* Product card hover effects */

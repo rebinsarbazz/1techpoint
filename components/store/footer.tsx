@@ -65,7 +65,7 @@ export function Footer() {
               </a>
             </div>
             <div className="space-y-2">
-              <p className="text-sm font-medium">Payment Methods</p>
+              <p className="text-sm font-medium">{t("payment")}</p>
               <div className="flex flex-wrap gap-2 text-xs text-muted-foreground">
                 <span className="rounded border border-border bg-background px-2 py-1">Cash on Delivery</span>
                 <span className="rounded border border-border bg-background px-2 py-1">FastPay</span>

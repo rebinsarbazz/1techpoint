@@ -35,8 +35,8 @@ export function FeaturedProducts({ products, title, showViewAll = true }: Featur
           </Button>
         )}
       </div>
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-        {products.slice(0, 4).map((product) => (
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-7">
+        {products.slice(0, 7).map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </div>

@@ -58,6 +58,9 @@ export const translations = {
     specifications: 'Specifications',
     reviews: 'Reviews',
     relatedProducts: 'Related Products',
+    text1: "Save up to",
+    text2: "on Selected Products",
+    text3: "Get the best deals on top electronics.",
     
     // Categories
     allCategories: 'All Categories',
@@ -171,6 +174,7 @@ export const translations = {
     subscribeNewsletter: 'Subscribe to our newsletter',
     emailPlaceholder: 'Enter your email',
     subscribe: 'Subscribe',
+    payment: 'Payment Methods',
     allRightsReserved: 'All Rights Reserved',
   },
   
@@ -214,6 +218,9 @@ export const translations = {
     specifications: 'تایبەتمەندییەکان',
     reviews: 'هەڵسەنگاندنەکان',
     relatedProducts: 'بەرهەمە پەیوەندیدارەکان',
+    text1: "پاشەکەوت بکە تا",
+    text2: "لەسەر بەرهەمە هەڵبژێردراوەکان",
+    text3: "باشترین گرێبەستەکان بەدەست بهێنە لەسەر ئەلیکترۆنیاتی سەرەکی.",
     
     // Categories
     allCategories: 'هەموو پۆلەکان',
@@ -327,6 +334,7 @@ export const translations = {
     subscribeNewsletter: 'بەشداری لە نامەی هەواڵمان بکە',
     emailPlaceholder: 'ئیمەیڵەکەت بنووسە',
     subscribe: 'بەشداریکردن',
+    payment: 'شێوازەکانی پارەدان',
     allRightsReserved: 'هەموو مافەکان پارێزراون',
   },
   
@@ -370,6 +378,9 @@ export const translations = {
     specifications: 'المواصفات',
     reviews: 'التقييمات',
     relatedProducts: 'منتجات ذات صلة',
+    text1: "وفر حتى",
+    text2: "على منتجات مختارة",
+    text3: "احصل على أفضل العروض على أفضل الأجهزة الإلكترونية.",
     
     // Categories
     allCategories: 'جميع الفئات',
@@ -483,6 +494,7 @@ export const translations = {
     subscribeNewsletter: 'اشترك في نشرتنا الإخبارية',
     emailPlaceholder: 'أدخل بريدك الإلكتروني',
     subscribe: 'اشترك',
+    payment: 'طرق الدفع',
     allRightsReserved: 'جميع الحقوق محفوظة',
   },
 } as const

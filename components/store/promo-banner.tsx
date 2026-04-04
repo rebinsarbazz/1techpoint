@@ -51,11 +51,11 @@ export function PromoBanner({ products }: PromoBannerProps) {
             </div>
 
             <h2 className="text-balance text-3xl font-bold md:text-4xl lg:text-5xl">
-              Save up to <span className="text-sale">{discountPercent}%</span> on Selected Products
+              {t("text1")} <span className="text-sale">{discountPercent}%</span> {t("text2")}
             </h2>
 
             <p className="mt-4 text-lg text-white/80">
-              Limited time offer! Get the best deals on top electronics.
+              {t("text3")}
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">

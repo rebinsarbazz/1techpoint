@@ -14,7 +14,7 @@ type I18nContextType = {
 
 const I18nContext = createContext<I18nContextType | null>(null)
 
-const LOCALE_STORAGE_KEY = 'electromall-locale'
+const LOCALE_STORAGE_KEY = 'firsttechpoint-locale'
 
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>(defaultLocale)

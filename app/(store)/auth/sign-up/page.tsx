@@ -74,7 +74,7 @@ export default function SignUpPage() {
         <div className="flex flex-col gap-6">
           <div className="text-center">
             <Link href="/" className="inline-flex items-center gap-2 text-xl font-bold text-primary">
-              <span className="text-2xl">⚡</span>
+              <img src="/logo.png" alt="Logo" className="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
               <span>{t('siteName')}</span>
             </Link>
           </div>
@@ -82,9 +82,6 @@ export default function SignUpPage() {
           <Card>
             <CardHeader>
               <CardTitle className="text-2xl">{t('createAccount')}</CardTitle>
-              <CardDescription>
-                Create a new account to start shopping
-              </CardDescription>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSignUp}>

@@ -122,16 +122,8 @@ export default function CartPage() {
                             onClick={() => removeItem(item.product.id)}
                           >
                             <Trash2 className="h-4 w-4" />
-                            <span className="sr-only">{t('removeItem')}</span>
                           </Button>
                         </div>
-                      </div>
-
-                      {/* Line total */}
-                      <div className="hidden text-right sm:block">
-                        <p className="font-semibold">
-                          {(price * item.quantity).toLocaleString()} {t('currency')}
-                        </p>
                       </div>
                     </div>
                   </CardContent>

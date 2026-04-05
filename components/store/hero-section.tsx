@@ -123,7 +123,7 @@ export function HeroSection() {
                       />
 
                       {/* Overlay */}
-                      <div className="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-colors duration-300" />
+                      <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300" />
 
                       {/* Glow */}
                       <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/20 via-purple-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300" />

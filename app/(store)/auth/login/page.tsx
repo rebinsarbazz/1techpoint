@@ -57,7 +57,7 @@ export default function LoginPage() {
         <div className="flex flex-col gap-6">
           <div className="text-center">
             <Link href="/" className="inline-flex items-center gap-2 text-xl font-bold text-primary">
-              <span className="text-2xl">⚡</span>
+              <img src="/logo.png" alt="Logo" className="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
               <span>{t('siteName')}</span>
             </Link>
           </div>
@@ -65,9 +65,6 @@ export default function LoginPage() {
           <Card>
             <CardHeader>
               <CardTitle className="text-2xl">{t('login')}</CardTitle>
-              <CardDescription>
-                Enter your email below to login to your account
-              </CardDescription>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleLogin}>
@@ -86,12 +83,6 @@ export default function LoginPage() {
                   <div className="grid gap-2">
                     <div className="flex items-center justify-between">
                       <Label htmlFor="password">{t('password')}</Label>
-                      <Link
-                        href="/auth/forgot-password"
-                        className="text-sm text-muted-foreground hover:text-primary"
-                      >
-                        {t('forgotPassword')}
-                      </Link>
                     </div>
                     <Input
                       id="password"
